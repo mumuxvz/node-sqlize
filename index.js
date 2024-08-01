@@ -3,6 +3,7 @@ const { sequelize } = require("./config/database"); // Correctly import the sequ
 const BookModel = require("./models/Book");
 const app = express();
 const port = 3000;
+app.use(express.json())
 
 const initApp = async () => {
     console.log("Testing the database connection..");
